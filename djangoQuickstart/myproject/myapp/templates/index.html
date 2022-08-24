@@ -7,10 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
 </head>
 <body>
+
+	<!-- example of working with images (located in new assets directory in static) -->
+	<img src="{% static 'assets/emoji.png'%}">
 	<p>
 		if the background not grey
 		<br>
 	    please refresh the cache!
 	</p>
+
+	<!-- example of passing data from the server to HTML (lease see views.py)-->
+	<p>Today is {{ mydate }}</p>
+
+	<script type="text/javascript" src="{% static 'js/script.js'%}"></script>
 </body>
 </html>
